@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Navbar from "./components/Navbar";
+import Profile from "./components/Profile";
 
 function App() {
   const [followers, setFollowers] = useState(0);
@@ -36,8 +37,8 @@ function App() {
   return (
     <div className="flex min-h-screen flex-col bg-[#FAF3E1] text-[#222222]">
       <Navbar />
-
-      <div className="flex items-end justify-between bg-[#F5E7C6] px-20 py-10">
+      <Profile />
+      {/* <div className="flex items-end justify-between bg-[#F5E7C6] px-20 py-10">
         <div>
           <header>
             <h2 className="text-6xl font-bold">Hynes Gavin C. Daugdaug</h2>
@@ -78,7 +79,7 @@ function App() {
             Reset
           </button>
         </div>
-      </div>
+      </div> */}
 
       <main className="grid grid-cols-3 gap-8 px-20 pt-8">
         <div className="rounded-xl border-2 border-[#222222] p-8">

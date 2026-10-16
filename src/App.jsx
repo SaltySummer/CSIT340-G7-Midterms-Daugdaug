@@ -37,12 +37,15 @@ function App() {
   }
 
   return (
-    <div className="flex min-h-screen flex-col bg-[#FAF3E1] text-[#222222]">
-      <Navbar />
-      <Profile />
-      <Repositories />
+    <>
+      <div className="flex min-h-screen flex-col bg-[#FAF3E1] text-[#222222]">
+        <Navbar />
+        <Profile />
+        <Repositories />
+      </div>
+      
       <Footer />
-    </div>
+    </>
   );
 }
 

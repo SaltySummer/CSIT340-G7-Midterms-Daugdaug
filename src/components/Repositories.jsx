@@ -1,3 +1,4 @@
+import App from "../App";
 function Repositories() {
     <main className="grid grid-cols-3 gap-8 px-20 pt-8">
         <div className="rounded-xl border-2 border-[#222222] p-8">
@@ -5,9 +6,9 @@ function Repositories() {
             <h3 className="text-2xl font-bold">portfolio</h3>
             <button
               className="cursor-pointer rounded-lg border-2 border-[#222222] px-4 py-1 text-xl"
-              onClick={handleStarPortfolio}
+              onClick={App.handleStarPortfolio}
             >
-              ★ {portfolioStars}
+              ★ {App.portfolioStars}
             </button>
           </div>
           <p className="mt-2 text-xl">My personal page built with React.</p>
@@ -23,9 +24,9 @@ function Repositories() {
             <h3 className="text-2xl font-bold">todo-api</h3>
             <button
               className="cursor-pointer rounded-lg border-2 border-[#222222] px-4 py-1 text-xl"
-              onClick={handleStarTodo}
+              onClick={App.handleStarTodo}
             >
-              ★ {todoStars}
+              ★ {App.todoStars}
             </button>
           </div>
           <p className="mt-2 text-xl">A small REST API for a to-do list.</p>
@@ -41,9 +42,9 @@ function Repositories() {
             <h3 className="text-2xl font-bold">dotfiles</h3>
             <button
               className="cursor-pointer rounded-lg border-2 border-[#222222] px-4 py-1 text-xl"
-              onClick={handleStarDotfiles}
+              onClick={App.handleStarDotfiles}
             >
-              ★ {dotfilesStars}
+              ★ {App.dotfilesStars}
             </button>
           </div>
           <p className="mt-2 text-xl">My terminal and editor settings.</p>

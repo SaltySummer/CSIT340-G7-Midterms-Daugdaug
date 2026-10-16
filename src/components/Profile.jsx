@@ -1,5 +1,6 @@
 import Bio from "./Bio";
 import StatCard from "./StatCard";
+import App from "../App";
 
 function Profile(){
     return (
@@ -15,19 +16,19 @@ function Profile(){
             <div className="flex gap-4">
                 <button
                     className="cursor-pointer rounded-lg bg-[#FA8112] px-8 py-3 text-xl font-bold text-[#222222]"
-                    // onClick={handleFollow}
+                    onClick={App.handleFollow}
                 >
                     Follow
                 </button>
                 <button
                     className="cursor-pointer rounded-lg bg-[#222222] px-8 py-3 text-xl font-bold text-[#FAF3E1]"
-                    // onClick={handleAddRate}
+                    onClick={App.handleAddRate}
                 >
                     Add rate
                 </button>
                 <button
                     className="cursor-pointer rounded-lg border-2 border-[#222222] px-8 py-3 text-xl font-bold"
-                    // onClick={handleReset}
+                    onClick={App.handleReset}
                 >
                     Reset
                 </button>

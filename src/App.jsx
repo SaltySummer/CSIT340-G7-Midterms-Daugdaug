@@ -2,6 +2,7 @@ import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Profile from "./components/Profile";
 import Repositories from "./components/Repositories";
+import Footer from "./components/Footer";
 
 function App() {
   const [followers, setFollowers] = useState(0);
@@ -40,6 +41,10 @@ function App() {
       <Navbar />
       <Profile />
       <Repositories />
+      <Footer />
+    </div>
+    )
+       
        {/* <div className="flex items-end justify-between bg-[#F5E7C6] px-20 py-10">
         <div>
           <header>
@@ -81,9 +86,9 @@ function App() {
             Reset
           </button>
         </div>
-      </div> */
+      </div>
 
-      /* <main className="grid grid-cols-3 gap-8 px-20 pt-8">
+    <main className="grid grid-cols-3 gap-8 px-20 pt-8">
         <div className="rounded-xl border-2 border-[#222222] p-8">
           <div className="flex items-center justify-between">
             <h3 className="text-2xl font-bold">portfolio</h3>
@@ -138,13 +143,12 @@ function App() {
             <span>12 commits</span>
           </div>
         </div>
-      </main> */}
+      </main>
 
       <footer className="mt-auto bg-[#222222] px-20 py-6 text-center text-xl text-[#FAF3E1]">
         <p>Every profile on DevHub is public.</p>
       </footer>
-    </div>
-  );
+    </div> */}
 }
 
 export default App;
